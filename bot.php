@@ -10,7 +10,8 @@ $events = json_decode($content, true);
 // Validate parsed JSON data
 if (!is_null($events['ESP'])) {
 	
-	send_LINE($events['ESP']);
+	//send_LINE($events['ESP']);
+	send_LINE("test");
 		
 	echo "OK";
 	}
