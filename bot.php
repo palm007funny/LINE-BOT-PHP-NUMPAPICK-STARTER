@@ -26,7 +26,7 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			send_LINE("test");
+			//send_LINE("test");
 			$Topic = "NodeMCU1" ;
 			getMqttfromlineMsg($Topic,$text);
 			echo "OK2";   
