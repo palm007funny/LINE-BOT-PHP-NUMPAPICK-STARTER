@@ -1,15 +1,26 @@
  <?php
-  
+
+function after ($this, $inthat) {
+    if (!is_bool(strpos($inthat, $this)))
+      return substr($inthat, strpos($inthat,$this)+strlen($this));
+ };
+function before ($this, $inthat){
+    return substr($inthat, 0, strpos($inthat, $this));
+ };
+
+function between ($this, $that, $inthat){
+        return before ($that, after($this, $inthat));
+};  
 
 function send_LINE($msg){
-  if($msg == 'test') {
- $access_token = '4sXuyfiP4D3M5hRXVZC+yC/Sw/qyFYku2tSzua4JNESbF8Q6ei0Nwy3vkPsj8fqFztOhGWhLTLLEv4HtmHYVYBbPFYxl92CkMb/ni/SARw0/+KUab0FiKO+RC8c3a8joF1SHSsqDcFeeqhWHUyu87gdB04t89/1O/w1cDnyilFU='; 
+  if($msg == 'lat') {
+  $access_token = '4sXuyfiP4D3M5hRXVZC+yC/Sw/qyFYku2tSzua4JNESbF8Q6ei0Nwy3vkPsj8fqFztOhGWhLTLLEv4HtmHYVYBbPFYxl92CkMb/ni/SARw0/+KUab0FiKO+RC8c3a8joF1SHSsqDcFeeqhWHUyu87gdB04t89/1O/w1cDnyilFU='; 
   $messages = [
         'type' => 'location',
         'title' => 'my_location',
         'address' => 'thailand',
-        'latitude' => 35.65910807942215,
-        'longitude' => 139.70372892916203
+        'latitude' => between('lat','lng',$string),
+        'longitude' => between('lng','/',$string)
         //'text' => $text
       ];
   
