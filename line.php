@@ -12,7 +12,7 @@ function send_LINE($msg){
 
       // Make a POST Request to Messaging API to reply to sender
       if ($messages == "test") {   
-        "message": {
+        'message' => {
         "id": "325708",
         "type": "location",
         "title": "my location",
