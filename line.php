@@ -6,8 +6,8 @@ function send_LINE($msg){
  $access_token = '4sXuyfiP4D3M5hRXVZC+yC/Sw/qyFYku2tSzua4JNESbF8Q6ei0Nwy3vkPsj8fqFztOhGWhLTLLEv4HtmHYVYBbPFYxl92CkMb/ni/SARw0/+KUab0FiKO+RC8c3a8joF1SHSsqDcFeeqhWHUyu87gdB04t89/1O/w1cDnyilFU='; 
   $messages = [
         'type' => 'location',
-        'latitude' => '35.65910807942215',
-        'longitude' => '139.70372892916203'
+        'latitude' => 35.65910807942215,
+        'longitude' => 139.70372892916203
         //'text' => $text
       ];
   
