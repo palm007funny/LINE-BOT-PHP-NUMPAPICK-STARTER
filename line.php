@@ -11,11 +11,7 @@ function send_LINE($msg){
       ];
 
       // Make a POST Request to Messaging API to reply to sender
-      if ($messages == "test") {   
-        'to' => 'Ub95db7d216f23a9676ce61869d52e2a7',
-        'messages' => ['asd'],
-      ];
-      }
+     
       $url = 'https://api.line.me/v2/bot/message/push';
       $data = [
 
