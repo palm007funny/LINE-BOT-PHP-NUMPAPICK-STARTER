@@ -13,16 +13,16 @@ function between ($this, $that, $inthat){
 };  
 
 function send_LINE($msg){
-/*  if($msg[0] == 'l' && $msg[1] == 'a' && $msg[2] == 't' ) {
-  &lat = between('lat','lng',$msg);
-  &lng = between('lng','/',$msg);
+  if($msg[0] == 'l' && $msg[1] == 'a' && $msg[2] == 't' ) {
+  //&lat = between('lat','lng',$msg);
+  //&lng = between('lng','/',$msg);
   $access_token = '4sXuyfiP4D3M5hRXVZC+yC/Sw/qyFYku2tSzua4JNESbF8Q6ei0Nwy3vkPsj8fqFztOhGWhLTLLEv4HtmHYVYBbPFYxl92CkMb/ni/SARw0/+KUab0FiKO+RC8c3a8joF1SHSsqDcFeeqhWHUyu87gdB04t89/1O/w1cDnyilFU='; 
   $messages = [
         'type' => 'location',
         'title' => 'my_location',
         'address' => 'thailand',
-        'latitude' => &lat,
-        'longitude' => &lng
+        'latitude' => 123.0,
+        'longitude' => 123.1
         //'text' => $text
       ];
   
@@ -48,7 +48,7 @@ function send_LINE($msg){
       curl_close($ch);
 
       echo $result . "\r\n"; 
-  } else {*/
+  } else {
  $access_token = '4sXuyfiP4D3M5hRXVZC+yC/Sw/qyFYku2tSzua4JNESbF8Q6ei0Nwy3vkPsj8fqFztOhGWhLTLLEv4HtmHYVYBbPFYxl92CkMb/ni/SARw0/+KUab0FiKO+RC8c3a8joF1SHSsqDcFeeqhWHUyu87gdB04t89/1O/w1cDnyilFU='; 
 
   $messages = [
@@ -78,7 +78,7 @@ function send_LINE($msg){
       curl_close($ch);
 
       echo $result . "\r\n"; 
- // }
+  }
 }
 
 ?>
