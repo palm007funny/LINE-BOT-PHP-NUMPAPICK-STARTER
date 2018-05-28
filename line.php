@@ -14,13 +14,15 @@ function between ($this, $that, $inthat){
 
 function send_LINE($msg){
   if($msg[0] == 'l' && $msg[1] == 'a' && $msg[2] == 't' ) {
+  &lat = between('lat','lng',$string);
+  &lng = between('lng','/',$string);
   $access_token = '4sXuyfiP4D3M5hRXVZC+yC/Sw/qyFYku2tSzua4JNESbF8Q6ei0Nwy3vkPsj8fqFztOhGWhLTLLEv4HtmHYVYBbPFYxl92CkMb/ni/SARw0/+KUab0FiKO+RC8c3a8joF1SHSsqDcFeeqhWHUyu87gdB04t89/1O/w1cDnyilFU='; 
   $messages = [
         'type' => 'location',
         'title' => 'my_location',
         'address' => 'thailand',
-        'latitude' => between('lat','lng',$string),
-        'longitude' => between('lng','/',$string)
+        'latitude' => &lat,
+        'longitude' => &lng
         //'text' => $text
       ];
   
