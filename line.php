@@ -14,8 +14,8 @@ function between ($this, $that, $inthat){
 
 function send_LINE($msg){
   if($msg[0] == 'l' && $msg[1] == 'a' && $msg[2] == 't' ) {
-  &lat = float(between('lat','lng',$msg));
-  &lng = float(between('lng','/',$msg));
+  &lat = between('lat','lng',$msg);
+  &lng = between('lng','/',$msg);
   $access_token = '4sXuyfiP4D3M5hRXVZC+yC/Sw/qyFYku2tSzua4JNESbF8Q6ei0Nwy3vkPsj8fqFztOhGWhLTLLEv4HtmHYVYBbPFYxl92CkMb/ni/SARw0/+KUab0FiKO+RC8c3a8joF1SHSsqDcFeeqhWHUyu87gdB04t89/1O/w1cDnyilFU='; 
   $messages = [
         'type' => 'location',
