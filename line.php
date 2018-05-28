@@ -21,8 +21,8 @@ function send_LINE($msg){
         'type' => 'location',
         'title' => 'my_location',
         'address' => 'thailand',
-        'latitude' => 123.0,
-        'longitude' => 123.1
+        'latitude' => 0.0,
+        'longitude' => 0.0
         //'text' => $text
       ];
   
