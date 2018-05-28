@@ -2,7 +2,7 @@
   
 
 function send_LINE($msg){
-  if($smg == 'test') {
+  if($msg == 'test') {
  $access_token = '4sXuyfiP4D3M5hRXVZC+yC/Sw/qyFYku2tSzua4JNESbF8Q6ei0Nwy3vkPsj8fqFztOhGWhLTLLEv4HtmHYVYBbPFYxl92CkMb/ni/SARw0/+KUab0FiKO+RC8c3a8joF1SHSsqDcFeeqhWHUyu87gdB04t89/1O/w1cDnyilFU='; 
 
   $messages = [
