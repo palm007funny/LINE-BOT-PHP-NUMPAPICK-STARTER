@@ -31,8 +31,8 @@ function send_LINE($msg){
      
       $url = 'https://api.line.me/v2/bot/message/push';
       $data = [
-        //'to' => 'Ub95db7d216f23a9676ce61869d52e2a7',
-        'to' => 'U884a25fc429860c85cbbea861774344b',
+        'to' => 'Ub95db7d216f23a9676ce61869d52e2a7',
+        //'to' => 'U884a25fc429860c85cbbea861774344b',
         'messages' => [$messages],
       ];
       $post = json_encode($data);
@@ -62,8 +62,8 @@ function send_LINE($msg){
       $url = 'https://api.line.me/v2/bot/message/push';
       $data = [
 
-        //'to' => 'Ub95db7d216f23a9676ce61869d52e2a7',
-        'to' => 'U884a25fc429860c85cbbea861774344b',
+        'to' => 'Ub95db7d216f23a9676ce61869d52e2a7',
+        //'to' => 'U884a25fc429860c85cbbea861774344b',
         'messages' => [$messages],
       ];
       $post = json_encode($data);
