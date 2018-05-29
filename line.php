@@ -16,7 +16,7 @@ function send_LINE($msg){
   if($msg[0] == 'l' && $msg[1] == 'a' && $msg[2] == 't' ) {
   $lat = between('lat','lng',$msg);
   $lng = between('lng','/',$msg);
-  $access_token = '4sXuyfiP4D3M5hRXVZC+yC/Sw/qyFYku2tSzua4JNESbF8Q6ei0Nwy3vkPsj8fqFztOhGWhLTLLEv4HtmHYVYBbPFYxl92CkMb/ni/SARw0/+KUab0FiKO+RC8c3a8joF1SHSsqDcFeeqhWHUyu87gdB04t89/1O/w1cDnyilFU='; 
+  $access_token = 'V/G/jNAUK4kYbKnN4egxGrc6bCG/MR9fOaGeEGfX8l6wIHy01m6s601ZKzipOnQjkho2M9FRf8yDtl+ZxdIW1HjTVMGYNcBGallFw9Js1T/rZ0CPOCS4S19curEwz1Bjb9UilfCzFpNi3B45SL6WwQdB04t89/1O/w1cDnyilFU='; 
   $messages = [
         'type' => 'location',
         'title' => 'my_location',
@@ -31,8 +31,8 @@ function send_LINE($msg){
      
       $url = 'https://api.line.me/v2/bot/message/push';
       $data = [
-        'to' => 'Ub95db7d216f23a9676ce61869d52e2a7',
-        //'to' => 'U884a25fc429860c85cbbea861774344b',
+        //'to' => 'Ub95db7d216f23a9676ce61869d52e2a7',
+        'to' => 'U35a7cdc226bf814183430f2d34d6285d',
         'messages' => [$messages],
       ];
       $post = json_encode($data);
@@ -49,7 +49,7 @@ function send_LINE($msg){
 
       echo $result . "\r\n"; 
   } else {
- $access_token = '4sXuyfiP4D3M5hRXVZC+yC/Sw/qyFYku2tSzua4JNESbF8Q6ei0Nwy3vkPsj8fqFztOhGWhLTLLEv4HtmHYVYBbPFYxl92CkMb/ni/SARw0/+KUab0FiKO+RC8c3a8joF1SHSsqDcFeeqhWHUyu87gdB04t89/1O/w1cDnyilFU='; 
+ $access_token = 'V/G/jNAUK4kYbKnN4egxGrc6bCG/MR9fOaGeEGfX8l6wIHy01m6s601ZKzipOnQjkho2M9FRf8yDtl+ZxdIW1HjTVMGYNcBGallFw9Js1T/rZ0CPOCS4S19curEwz1Bjb9UilfCzFpNi3B45SL6WwQdB04t89/1O/w1cDnyilFU='; 
 
   $messages = [
         'type' => 'text',
@@ -62,8 +62,8 @@ function send_LINE($msg){
       $url = 'https://api.line.me/v2/bot/message/push';
       $data = [
 
-        'to' => 'Ub95db7d216f23a9676ce61869d52e2a7',
-        //'to' => 'U884a25fc429860c85cbbea861774344b',
+        'to' => 'U35a7cdc226bf814183430f2d34d6285d',
+        //'to' => 'Ub95db7d216f23a9676ce61869d52e2a7',
         'messages' => [$messages],
       ];
       $post = json_encode($data);
